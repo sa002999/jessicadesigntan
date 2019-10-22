@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="http://imgur.com/a/qtFfN">
+    <meta property="og:title" content="Dear Carrie is a community of readers and writers offering unique perspectives on mental-health related issues." />
+    <title>All Topics</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Own style & js -->
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/8C7CB5FA-4096-474A-ABEB-5EF31570FC6B/main.js" charset="UTF-8"></script><script src="js/frontend.js"></script>
+    <script src="js/form_validation.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- angularjs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!-- profile picture upload in edit profile -->
+    <script src="js/jquery.imgareaselect.js"></script>
+    <script src="js/jquery.awesome-cropper.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#uploadImage').awesomeCropper(
+            { width: 200, height: 200, debug: true }
+            );
+        });
+    </script>
+
+    <script src="js/autocomplete.js"></script>
+
+    <!-- wow.js for css animations & initialization -->
+    <script src="js/wow.js"></script>
+    <script src="js/pace.js"></script>
+    <script>new WOW().init();</script>
+    <script>
+      $(window).load(function() {
+      	$(".loader").fadeOut("slow");
+      })
+
+      //start check search textbox
+      $(document).ready(function(){
+          $('#myForm').submit(function(){
+           if($.trim($('#search_keyword_id').val()) == '')
+           {
+             alert("Please type something in the search bar!");
+             return false;
+           }
+          else
+          {
+           return true;
+          }
+        })
+      });
+      //end check search textbox
+    </script>
+  </head>
+
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid page-container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index"><img alt="brand" src="images/logo.svg" width="160px;"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav hide-mobile">
+          <li>
+            <a href="topic">Editor's Picks</a>
+          </li>
+        </ul>
+        <form id="myForm" class="navbar-form navbar-left hide-mobile" action="search" method="get">
+            <input id="search_keyword_id" type="text" class="search_keyword nav-search" placeholder="Search anything . . ." name="search_keyword_id" autocomplete="off">
+            <input type="hidden" name="tp" value="all">
+            <button type="submit" class="hidden-submit"></button>
+            <div id="result"></div>
+        </form>
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="show-mobile"><a href="topic">Editor's Picks</a></li>
+          <!-- not signed in -->
+                    <li><a href="login" class="light-text">Login</a></li>
+          <li><a href="signup" class="cta-btn">Sign up</a></li>
+                    <!-- /not signed in -->
+
+          <!-- signed in for mobile -->
+                    <!-- /signed in for mobile-->
+
+          <!-- signed in Facebook-->
+                    <!-- /signed in Facebook-->
+
+          <!-- signed in for desktop -->
+          <li class="dropdown hide-mobile">
+                      </li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+
+    <div class="mobile-search-bar show-mobile">
+        <form action="search">
+            <input type="text" id="search_keyword_id" name="search_keyword_id" autocomplete="off" class="nav-search" placeholder="Search anything . . .">
+        </form>
+    </div><!--/.mobile-search-bar -->
+  </nav>
+    <div class="page-container">
+      <!--<h3 class="hero-center">Featured Topics</h3>
+      <div class="row">
+                </div>-->
+
+      <h3 class="hero-center">Editor's Picks</h3>
+
+      <div class="row">
+                      <div class="col-sm-12">
+                  <div class="card topic-card">
+    <div class="image">
+      <a href="topicDetails?topicID=4"><img src="images/topics/1551963_118669_stress.jpg" class="img-responsive"></a>
+    </div>
+
+    <div class="content short">
+      <a href="topicDetails?topicID=4">
+        <h4>Academic Stress</h4>
+        <p>Feelings of stress and anxiety are a part of life. Some levels of stress can actually be good for us, as the right kind of stress encourages us toward change and growth. However, when stress and anxiety exist for an extended period of time, they can become a burden or even a health risk. This topic will help you recognise and understand feelings of stress and anxiety and learn how to manage them so that they don’t become overwhelming.</p>
+        <div class="followers">3 Followers</div>
+        <div class="posts">5 Posts</div>
+      </a>
+    </div>
+
+    <!--<div class="action">
+          </div>-->
+    <script src="js/followTopic.js"></script>
+  </div>
+            </div><!-- END col-sm-12 -->
+                      <div class="col-sm-12">
+                  <div class="card topic-card">
+    <div class="image">
+      <a href="topicDetails?topicID=11"><img src="images/topics/717248_anxiety.jpg" class="img-responsive"></a>
+    </div>
+
+    <div class="content short">
+      <a href="topicDetails?topicID=11">
+        <h4>Anxiety Disorder</h4>
+        <p>People with anxiety disorders respond to certain objects or situations with fear and dread, as well as with physical signs of anxiety or panic, such as a rapid heartbeat and sweating. Anxiety disorders include generalised anxiety disorder, panic disorder, social anxiety disorder, and specific phobias.</p>
+        <div class="followers">4 Followers</div>
+        <div class="posts">8 Posts</div>
+      </a>
+    </div>
+
+    <!--<div class="action">
+          </div>-->
+    <script src="js/followTopic.js"></script>
+  </div>
+            </div><!-- END col-sm-12 -->
+                      <div class="col-sm-12">
+                  <div class="card topic-card">
+    <div class="image">
+      <a href="topicDetails?topicID=9"><img src="images/topics/8978651_bipolar.jpg" class="img-responsive"></a>
+    </div>
+
+    <div class="content short">
+      <a href="topicDetails?topicID=9">
+        <h4>Bipolar Disorder</h4>
+        <p>Bipolar disorder can affect how a person feels, thinks and acts. It involves dramatic shifts in mood – from the highs of mania to the lows of major depression. More than a fleeting good or bad mood, the cycle of bipolar disorder lasts for days, weeks or months and is disruptive to work/social relationships. Bipolar disorder can rarely be overcome without medical treatment. For some, the periods between episodes of illness can be normal and productive. However, research suggests that when left untreated, episodes of illness occur more often and are more severe. During a manic episode, a person might impulsively quit a job, charge up huge amounts of debt, or feel rested after sleeping two hours. During a depressive episode, the same person might be too tired to get out of bed and full of self- loathing and hopelessness over his or her unemployment status and credit card bills.</p>
+        <div class="followers">3 Followers</div>
+        <div class="posts">2 Posts</div>
+      </a>
+    </div>
+
+    <!--<div class="action">
+          </div>-->
+    <script src="js/followTopic.js"></script>
+  </div>
+            </div><!-- END col-sm-12 -->
+                      <div class="col-sm-12">
+                  <div class="card topic-card">
+    <div class="image">
+      <a href="topicDetails?topicID=6"><img src="images/topics/2538629_ocd.jpg" class="img-responsive"></a>
+    </div>
+
+    <div class="content short">
+      <a href="topicDetails?topicID=6">
+        <h4>Obsessive Compulsive Disorder</h4>
+        <p>Obsessive compulsive disorder is a condition in which a person experiences intrusive thoughts, images or impulses. These are often very disturbing to you and may make the person feel anxious (obsessions). In turn, the person may perform certain acts or rituals in order to feel better or less anxious (compulsions). Typically, obsessions include fears of contamination, doubting (such as worrying that the iron has not been turned off), thoughts of hurting others, disturbing thoughts that go against the person&rsquo;s religious beliefs, or thoughts of performing acts the person feels are highly inappropriate. Compulsions can involve repeated checking, counting, washing, touching, or organizing things over and over again until they are symmetrical or &lsquo;just right.&rsquo;</p>
+        <div class="followers">4 Followers</div>
+        <div class="posts">5 Posts</div>
+      </a>
+    </div>
+
+    <!--<div class="action">
+          </div>-->
+    <script src="js/followTopic.js"></script>
+  </div>
+            </div><!-- END col-sm-12 -->
+                      <div class="col-sm-12">
+                  <div class="card topic-card">
+    <div class="image">
+      <a href="topicDetails?topicID=5"><img src="images/topics/8117235_ptsd.jpg" class="img-responsive"></a>
+    </div>
+
+    <div class="content short">
+      <a href="topicDetails?topicID=5">
+        <h4>PTSD</h4>
+        <p>Post-traumatic stress disorder occurs when a person has been exposed to traumatic events that cause her to experience distressing psychological symptoms that can become disabling. Common symptoms include nightmares; feelings of anger, irritability or emotional numbness; detachment from others; and flashbacks, during which the person re-lives the traumatic event. Frequently, the person will try to avoid situations or activities that remind her of the event.</p>
+        <div class="followers">3 Followers</div>
+        <div class="posts">3 Posts</div>
+      </a>
+    </div>
+
+    <!--<div class="action">
+          </div>-->
+    <script src="js/followTopic.js"></script>
+  </div>
+            </div><!-- END col-sm-12 -->
+                      <div class="col-sm-12">
+                  <div class="card topic-card">
+    <div class="image">
+      <a href="topicDetails?topicID=2"><img src="images/topics/3948110_split.jpg" class="img-responsive"></a>
+    </div>
+
+    <div class="content short">
+      <a href="topicDetails?topicID=2">
+        <h4>Split Personality</h4>
+        <p>Personality is how we as individuals usually think, feel, act and relate with one another. It deﬁnes who we are as a person. Our personalities are shaped by our upbringing, the culture we live in and the prevailing societal norms. When a person’s usual ways of thinking, feeling, relating to others and to their own selves become extreme within the society they live in, these “out of the ordinary” personalities can be classiﬁed as personality disorders. It leads to repeated problems with too much or too little emotions, impulses, patterns of thinking, abilities to study and work and most importantly, in relating with others. It leads to lifestyle problems such as drug and alcohol abuse, self-harm, promiscuity and violence and a relative inability to pursue meaningful lives. These disorders are developmental in origin and tend to become evident in adolescence. </p>
+        <div class="followers">1 Followers</div>
+        <div class="posts">3 Posts</div>
+      </a>
+    </div>
+
+    <!--<div class="action">
+          </div>-->
+    <script src="js/followTopic.js"></script>
+  </div>
+            </div><!-- END col-sm-12 -->
+                      <div class="col-sm-12">
+                  <div class="card topic-card">
+    <div class="image">
+      <a href="topicDetails?topicID=1"><img src="images/topics/7477413_drug.jpg" class="img-responsive"></a>
+    </div>
+
+    <div class="content short">
+      <a href="topicDetails?topicID=1">
+        <h4>Substance Abuse & Addiction</h4>
+        <p>Addiction is a chronic disease characterised by drug seeking and use that is compulsive, or difficult to control, despite harmful consequences. The initial decision to take drugs is voluntary for most people, but repeated drug use can lead to brain changes that challenge an addicted person&rsquo;s self-control and interfere with their ability to resist intense urges to take drugs. </p>
+        <div class="followers">1 Followers</div>
+        <div class="posts">2 Posts</div>
+      </a>
+    </div>
+
+    <!--<div class="action">
+          </div>-->
+    <script src="js/followTopic.js"></script>
+  </div>
+            </div><!-- END col-sm-12 -->
+                      <div class="col-sm-12">
+                  <div class="card topic-card">
+    <div class="image">
+      <a href="topicDetails?topicID=10"><img src="images/topics/3076891_suicide.jpg" class="img-responsive"></a>
+    </div>
+
+    <div class="content short">
+      <a href="topicDetails?topicID=10">
+        <h4>Suicidal Thoughts</h4>
+        <p>Suicide is the act of intentionally taking your own life.<br />
+Suicidal feelings can range from being preoccupied by abstract thoughts about ending your life, or feeling that people would be better off without you, to thinking about methods of suicide, or making clear plans to take your own life.<br />
+<br />
+If you are feeling suicidal, you might be scared or confused by these feelings.<br />
+But you are not alone. Many people think about suicide at some point in their lifetime. Come join us to share your feelings and thoughts with like minded people.</p>
+        <div class="followers">4 Followers</div>
+        <div class="posts">3 Posts</div>
+      </a>
+    </div>
+
+    <!--<div class="action">
+          </div>-->
+    <script src="js/followTopic.js"></script>
+  </div>
+            </div><!-- END col-sm-12 -->
+                </div>
+    </div><!-- END page-container -->
+
+
+      <footer class="footer">
+    <div class="page-container">
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="images/logo.svg" class="logo">
+        </div>
+        <div class="col-sm-12">
+          <ul>
+                            <li><a href="topicDetails?topicID=4">Academic Stress</a></li>
+                            <li><a href="topicDetails?topicID=11">Anxiety Disorder</a></li>
+                            <li><a href="topicDetails?topicID=9">Bipolar Disorder</a></li>
+                            <li><a href="topicDetails?topicID=8">Depression</a></li>
+                            <li><a href="topicDetails?topicID=3">Love & Relationships</a></li>
+                            <li><a href="topicDetails?topicID=6">Obsessive Compulsive Disorder</a></li>
+                            <li><a href="topicDetails?topicID=5">PTSD</a></li>
+                            <li><a href="topicDetails?topicID=2">Split Personality</a></li>
+                            <li><a href="topicDetails?topicID=7">Stress in Workplaces</a></li>
+                            <li><a href="topicDetails?topicID=1">Substance Abuse & Addiction</a></li>
+                            <li><a href="topicDetails?topicID=10">Suicidal Thoughts</a></li>
+                      </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+
+  <script src="js/followTopic.js"></script>
+
+</html>
