@@ -117,18 +117,6 @@ nav .container .links a {
   letter-spacing: 2px;
 }
 
-.dearcarrie nav .container a {
-  color: #e8595e;
-}
-
-.sharession nav .container .links > a {
-  color: rgba(0,0,0,0.5);
-}
-
-.fitness-portfolio nav .container a {
-  color: #7e25f2;
-}
-
 .st nav .container .links > a {
   color: black;
 }
@@ -472,10 +460,6 @@ footer {
   letter-spacing: 0.5px;
 }
 
-.fitness-portfolio .header .desc {
-  color: #aaa;
-}
-
 body.fitness-portfolio {
   padding: 0;
 }
@@ -672,7 +656,7 @@ section > div {
   font-family: 'brandon_grotesqueblack';
   font-size: 18px;
   line-height: 26px;
-  color: #ccc;
+  color: peru;
   margin-bottom: 0;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -694,10 +678,6 @@ section > div {
   background-color: #1552ff;
 }
 
-.timezone .header .desc {
-  color: #a7b6ff;
-}
-
 .timezone nav {
   background-color: #1552ff;
   padding: 50px 0 20px 0;
@@ -715,10 +695,6 @@ section > div {
 .timezone .section-title {
   color: #1552ff;
   margin-bottom: 50px;
-}
-
-.timezone .blue-bg .section-title {
-  color: white;
 }
 
 .timezone p {
@@ -747,13 +723,13 @@ section > div {
 .timezone .blue-bg.solution p.lead {
   font-size: 18px;
   font-family: 'Lato Bold';
-  color: white;
+  color: yellow;
 }
 
 .timezone .blue-bg.solution p {
   font-size: 18px;
   line-height: 32px;
-  color: #ddd;
+  color: red;
   letter-spacing: 0.5px;
 }
 
@@ -844,7 +820,7 @@ ul li.title::before {
   margin-top: 40px;
   font-size: 18px;
   line-height: 40px;
-  color: #888;
+  color: green;
   letter-spacing: 0.5px;
 }
 
@@ -956,14 +932,6 @@ ul li.title::before {
 
 .green-bg {
   background-color: #2fb758;
-}
-
-.timezone nav .container a {
-  color: white;
-}
-
-.sqrl nav .container .links > a {
-  color: black;
 }
 
 .sharession .header p.small {
@@ -1116,7 +1084,7 @@ ul li.title::before {
   max-width: 140%;
 }
 
-.pink-bg {
+.dearcarrie .pink-bg {
   background-color: #e8595e;
 }
 
@@ -1124,7 +1092,7 @@ ul li.title::before {
   padding-bottom: 100px;
 }
 
-.pink-bg .section-title {
+.dearcarrie .pink-bg .section-title {
   color: white;
 }
 
@@ -1297,9 +1265,9 @@ ul li.title::before {
 
 .st .role p.subtitle {
   text-align: center;
+  color: peachpuff;
 }
 
-.st p,
 .st .header .desc {
   color: #777;
 }
@@ -1322,6 +1290,7 @@ ul li.title::before {
   letter-spacing: 2px;
   text-align: center;
   opacity: 0.3;
+  color: salmon;
 }
 
 .st .year::after {
@@ -1336,8 +1305,12 @@ ul li.title::before {
   background-color: black;
 }
 
-.section-title.light {
-  color: white;
+.st .revamp.website .section-title.light {
+  color: blue;
+}
+
+.st .revamp.sellerapp .section-title.light {
+  color: salmon;
 }
 
 .st .section-title {
@@ -1346,13 +1319,26 @@ ul li.title::before {
 
 .st .section-subtitle {
   font-family: 'brandon_grotesqueblack';
-  color: #333;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.st .revamp .section-subtitle {
-  color: white;
+.st .revamp.website .section-subtitle {
+  color: yellow;
+  opacity: 0.5;
+}
+
+.st .banners .section-subtitle {
+  color: red;
+  opacity: 0.5;
+}
+
+.st .revamp.sellerapp .section-subtitle {
+  color: yellowgreen;
+  opacity: 0.5;
+}
+.st .cny .section-subtitle {
+  color: chocolate;
   opacity: 0.5;
 }
 
@@ -1379,6 +1365,7 @@ p.small {
   font-size: 13px;
   letter-spacing: 1px;
   margin-bottom: 0;
+  color: springgreen;
 }
 
 .st .cny p.lead::after {
@@ -2016,3 +2003,393 @@ footer .logo {
     display: none;
   }
 }
+
+/*start of workitout css*/
+.fitness-portfolio nav .container a.logo {
+  color: green;
+}
+
+.fitness-portfolio nav .container .links > a {
+  color: red;
+}
+
+.fitness-portfolio .header .desc {
+  color: royalblue;
+}
+
+.fitness-portfolio .concept .title1 {
+  color: orange;
+}
+
+.fitness-portfolio .concept h4 {
+  color: orangered;
+}
+
+.fitness-portfolio .concept p {
+  color: palegreen;
+}
+
+.fitness-portfolio .discover .title1 {
+  color: palevioletred;
+}
+
+.fitness-portfolio .create-workout .title1 {
+  color: peachpuff;
+}
+
+.fitness-portfolio .create-workout .title1-1 {
+  color: pink;
+}
+
+.fitness-portfolio .create-workout .title1-1 + .desc {
+  color: papayawhip;
+}
+
+.fitness-portfolio .create-workout .title1-2 {
+  color: plum;
+}
+
+.fitness-portfolio .create-workout .title1-2 + .desc {
+  color: steelblue;
+}
+
+.fitness-portfolio .create-workout .title1-3 {
+  color: powderblue;
+}
+
+.fitness-portfolio .create-workout .title1-3 + .desc {
+  color: teal;
+}
+
+.fitness-portfolio .create-workout .title1-4 {
+  color: purple;
+}
+
+.fitness-portfolio .create-workout .title1-4 + .desc {
+  color: salmon;
+}
+
+.fitness-portfolio .start-workout .title1 {
+  color: sienna;
+}
+
+.fitness-portfolio .start-workout .section-desc {
+  color: seagreen;
+}
+
+.fitness-portfolio .start-workout .title1-1 {
+  color: red;
+}
+
+.fitness-portfolio .start-workout .title1-1-1 {
+  color: blue;
+}
+
+.fitness-portfolio .schedule-workout .title1 {
+  color: yellow;
+}
+
+.fitness-portfolio .schedule-workout .section-desc {
+  color: tomato;
+}
+/*End of workitout css*/
+
+
+/*Start of timezone css*/
+.timezone nav .container a.logo {
+  color: green;
+}
+
+.timezone nav .container .links > a {
+  color: red;
+}
+
+.timezone .header .desc {
+  color: royalblue;
+}
+
+.timezone .concept .section-title {
+  color: purple;
+}
+
+.timezone .concept p {
+  color: blueviolet;
+}
+
+.timezone .flow .section-title {
+  color: antiquewhite;
+}
+
+.timezone .flow p {
+  color: chocolate;
+}
+
+.timezone .solution .section-title {
+  color: chartreuse;
+}
+
+.timezone .design-process .section-title {
+  color: burlywood;
+}
+
+.timezone .design-process p {
+  color: cadetblue;
+}
+
+.timezone .elements .section-title {
+  color: brown;
+}
+
+.timezone .elements p {
+  color: blueviolet;
+}
+
+.timezone .elements ul li.title {
+  color: green;
+}
+
+.timezone .elements ul li {
+  color: cadetblue;
+}
+
+.timezone .states .section-title {
+  color: green;
+}
+
+.timezone .states p.lead {
+  color: blueviolet;
+}
+
+.timezone .states ul li {
+  color: red;
+}
+
+.timezone .actions .section-title {
+  color: red;
+}
+
+.timezone .actions p.lead {
+  color: blueviolet;
+}
+
+.timezone .nightview .section-title {
+  color: purple;
+}
+
+.timezone .conclusion .section-title {
+  color: antiquewhite;
+}
+
+.timezone .conclusion p {
+  color: yellow;
+}
+/*End of timezone css*/
+
+
+/*start of sharession css*/
+.sharession nav .container a.logo {
+  color: yellow;
+}
+
+.sharession nav .container .links > a {
+  color: red;
+}
+
+.sharession .header .desc {
+  color: yellow;
+}
+
+.sharession .header .small {
+  color: red;
+}
+
+.sharession .scenario .section-title {
+  color: antiquewhite;
+}
+
+.sharession .scenario p {
+  color: chartreuse;
+}
+
+.sharession .solution .section-title {
+  color: orange;
+}
+
+.sharession .solution p {
+  color: tomato;
+}
+
+.sharession .design-considerations .section-title {
+  color: purple;
+}
+
+.sharession .design-considerations p {
+  color: red;
+}
+
+.sharession .final .section-title {
+  color: blue;
+}
+
+.sharession .final p {
+  color: red;
+}
+/*End of sharession css*/
+
+
+/*start of sqrl css*/
+.sqrl nav .container a.logo {
+  color: green;
+}
+
+.sqrl nav .container .links > a {
+  color: red;
+}
+
+.sqrl .header .desc {
+  color: royalblue;
+}
+
+.sqrl .design-style .title1 {
+  color: purple;
+}
+
+.sqrl .design-style .title2 {
+  color: white;
+}
+
+.sqrl .design-style .title3 {
+  color: black;
+}
+
+.sqrl .how-it-works .title1 {
+  color: blueviolet;
+}
+
+.sqrl .multiple-choice .title1 {
+  color: antiquewhite;
+}
+
+.sqrl .page1 .title1 {
+  color: chocolate;
+}
+
+.sqrl .page2 .title1 {
+  color: chartreuse;
+}
+
+.sqrl .home-page .title1-1 {
+  color: brown;
+}
+
+.sqrl .home-page .title1-2 {
+  color: burlywood;
+}
+
+.sqrl .home-page .title1-3 {
+  color: cadetblue;
+}
+/*End of sqrl css*/
+
+
+/*Start of dearcarrie css*/
+.dearcarrie nav .container a.logo {
+  color: blue;
+}
+
+.dearcarrie nav .container .links > a {
+  color: green;
+}
+
+.dearcarrie .header .desc {
+  color: yellow;
+}
+
+.dearcarrie .header .notes .title {
+  color: brown;
+}
+
+.dearcarrie .header .notes p {
+  color: chocolate;
+}
+
+.dearcarrie .header .notes a {
+  color: green;
+}
+
+.dearcarrie .stats .section-title {
+  color: blue;
+}
+
+.dearcarrie .logo-process.branding .section-title {
+  color: orange;
+}
+
+.dearcarrie .logo-process.branding p {
+  color: antiquewhite;
+}
+
+.dearcarrie .logo-process .section-title {
+  color: burlywood;
+}
+
+.dearcarrie .logo-process p {
+  color: orange;
+}
+
+.dearcarrie .topics .section-title {
+  color: red;
+}
+
+.dearcarrie .topics p {
+  color: black;
+}
+
+.dearcarrie .search .section-title {
+  color: tomato;
+}
+
+.dearcarrie .search p {
+  color: yellow;
+}
+/*End of dearcarrie css*/
+
+
+/*Start of styletribute css*/
+.st nav .container a.logo {
+  color: green;
+}
+
+.st nav .container .links > a {
+  color: red;
+}
+
+.st .role .section-title {
+  color: tomato;
+}
+
+.st .revamp.website p {
+  color: red;
+}
+
+.st .revamp.sellerapp p {
+  color: yellow;
+}
+
+.st .banners .section-title {
+  color: blue;
+}
+
+.st .banners p {
+  color: brown;
+}
+
+.st .cny .section-title {
+  color: blueviolet;
+}
+
+.st .cny p {
+  color: salmon;
+}
+
+/*End of styletribute css*/
