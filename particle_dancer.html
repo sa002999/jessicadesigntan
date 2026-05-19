@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: add og:image, og:title, og:description -->
+    <title>Jessicadesign - Particle Dancer</title>
+
+    <!-- own style -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <script src="js/wow.js"></script>
+    <script>new WOW().init();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    <script src="js/triangle.js"></script>
+    <!-- TODO: Google Analytics -->
+    
+  </head>
+    <body class="dancer portfolio">
+      <nav>
+        <div class="container">
+          <a class="logo" href="_index.html">
+            jessica<span class="lite">design</span>
+          </a>
+          <div class="links">
+            <a href="images/jessica_resume.pdf" target="_blank">resume</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header">
+        <div class="content">
+          <div class="text wow fadeInLeft">
+            <div class="title">
+              <img src="images/dancer_logo.png" height="40px;">
+            </div>
+            <div class="desc">
+              Interactive Dance Performance System
+            </div>
+            <p class="small"> 
+              Combing the Wireless Wearable Sensing Device and the Generated Imagery based on Particle Effects
+          </div>
+          <div class="image wow fadeInRight">
+            <img src="images/dancer/header.png" class="img-responsive">
+          </div>
+        </div>
+        <div class="bottom-bg"></div>
+      </div> <!--./end of header -->
+
+      <section class="scenario">
+        <div class="content wow fadeInUp">
+          <div class="section-title">Introduction</div>
+          <img src="images/dancer/scenario.png" class="img-responsive">
+          <div class="text">
+            <p>
+              In the past, the dancers and the multimedia content may synchronize with each other perfectly as if interaction technology is used, but it is actually the dancers' movement that deliberately synchronizes with the fixed multimedia content to produce pseudo interactive effects.
+            <br/><br/>
+              Recent interactive dance performance:
+              <br/>
+              Tokyo, P.I.C.S – “EXISDANCE” (2017)
+              <br/>
+              France, Adrien Mondot & Claire Bardainne – “The movement of air” (2015)                                          
+            <br/><br/>
+              The above interactive performance system does not provide a more user-friendly interface. As for the artists which don’t have technical background, there are not enough incentive to use.
+            <br/><br/>
+              To break the limitations, I propose an interactive dance performance system. The choreographers or field control crew can use the control interface on the Max/Msp system through Mira application on iPad to switch the effects of generated imagery or to modify the parameters of effects in real-time easily.     
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="full-image">
+        <img src="images/dancer/divider.png" class="img-responsive">
+      </div>
+
+      <section class="solution">
+        <div class="content wow fadeInUp processing">
+          <div class="section-title">Solution</div>
+          <div class="text" id="sketch-holder">
+            <p>
+              Interactive dance performance system based on Myo.<br/>
+              
+              This system is dedicated to reducing the need for relying on professional technicians and reducing the generation gap between dancers and professional technicians.
+              Provide a way to directly interact with custom visual projection effects based on dancers ’body movements or gestures.
+              <br/><br/>
+              Dancers wearing Myo Armband, a gesture sensing device, through the wireless transmission technology and control system, can interact with the generated imagery on the projection screen. The choreographers or field control crew can use the control interface on the Max/MSP/Jitter system on the iPad to switch the effects of generated imagery easily. The system was tested and proved to be useful by professional dancers and choreographer. 
+              <br/><br/>
+              In addition, this study also collected their opinions and summarized the design principles of the interactive performance system. Finally, the researcher reviews the design process of the system, discusses the research results after the subjects' trial of the interactive performance system, and makes specific conclusions and propositions.
+            </p>
+            <!-- <canvas class="mycanvas"></canvas> -->
+          </div>
+          <img src="images/dancer/solution.png" class="img-responsive solution">
+        </div>
+      </section>
+
+      <section class="light-grey-bg design-considerations">
+        <div class="content wow fadeInUp">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="section-title">Research process and method</div>
+              <div class="text">
+                <p>
+                  The target groups are dancers, choreographers and field control personnel.<br/>
+                  Therefore, after the prototype development of the system is completed, the research and measurement phase will be started, and dancers, choreographers and field control personnel will be invited to operate and use the system, and observe and record the actual usage of the users. After the user operation is completed, data is collected through questionnaires.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <img src="images/dancer/design_considerations.png" class="img-responsive">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="green-bg factors">
+        <div class="content wow fadeInUp">
+          <img src="images/dancer/factor1.png" class="img-responsive">
+          <img src="images/dancer/factor2.png" class="img-responsive">
+        </div>
+      </section>
+
+      <section class="final">
+        <div class="content wow fadeInUp">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="section-title">FINAL DESIGN</div>
+              <div class="text">
+                <p>
+                 <p class="desc">There are two presentation modes of the particle effects in this system. The first one is the particle effect formed with plane or geometric shapes. The second one is the particle effect that simulates fluids, explosions, flames, clouds, fogs, air and so on.</p>
+                  
+
+                  Besides, these effects can be divided into non-interactive and interactive effects. The former are simply the background atmosphere, the latter are those the dancers can interact with them to change their attributes, such as colors, shapes, ranges and quantities.
+
+                </p>
+              </div>
+              <div class="section-title">Conclusion</div>
+              <div class="text">
+                <p>
+                  <p class="desc">The system is designed to enable choreographers, dancers and field controllers to create interactive visual projection effects for live performances. With the synchronization of interactive systems, the performer can follow the live atmosphere to improvise.</p>
+                  
+                  
+                  <p class="desc">In addition, through the operation of iPad, the intuitive user interface and the support of multi-touch function, it provides more convenience for choreographers to easily edit and preview projected effects in the rehearsal stage. In the live performance, this system also allows the field controllers behind the scenes to instantly switch the visual effects. The hardware composition of this system is simple and easy to carry. The cost is low but allows a high degree of intuitive creation.</p>
+
+                  <!-- <p class="desc">According to the statistical analysis results, regardless of the dancers' experience in using interactive technology products in dance performances, it is considered that such systems are conducive to choreography and the execution of interactive dance performances.</p> -->                                
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <a href="https://youtu.be/XC18PLkXlQE">
+                <img src="images/dancer/final.png" class="img-responsive final-img">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="full-image">
+        <img src="images/dancer/wave_bottom.jpg" class="img-responsive">
+      </div>
+
+      <section class="yellow-bg logo-footer">
+        <div class="wow fadeInUp">
+          <p>next project</p>
+          <a href="xpay.html" class="wow pulse"><img src="images/xpay_logo.svg"></a>
+        </div>
+      </section>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript">
+        $('.final-img').hover(function () {
+          $(this).attr("src", "images/dancer/final_hover.png");
+        }, function () {
+          $(this).attr("src", "images/dancer/final.png");
+        });
+
+      </script>
+
+    </body>
+</html>

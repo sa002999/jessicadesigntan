@@ -1,0 +1,16 @@
+canvas.mycanvas {
+  /*position: absolute;*/
+  position: absolute;
+  top: 2000;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /*overflow: hidden; */
+  z-index: -1;
+  background-color: white;
+  /*padding: 0 50px;
+  max-width: 1200px;
+  margin: 0 auto;*/
+}
